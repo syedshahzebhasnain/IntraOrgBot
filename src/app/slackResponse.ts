@@ -2,10 +2,10 @@ export interface SlackResponse {
   helloResponse(): Promise<string>;
 }
 
-const response: SlackResponse = {
-  async helloResponse(): Promise<string> {
-    return 'Hello!';
-  },
-};
-
-export default response;
+export function createSlackResponse(): SlackResponse {
+  return {
+    async helloResponse(): Promise<string> {
+      return 'Hello!';
+    },
+  };
+}

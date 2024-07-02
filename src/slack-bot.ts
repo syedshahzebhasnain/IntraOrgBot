@@ -1,7 +1,7 @@
 import {App, LogLevel} from '@slack/bolt';
 import {SlackCommandsDeps, registerSlackCommands} from './slack/slackCommands';
-import slackResponse from './app/slackResponse';
 import loadConfig from './config/load';
+import {createSlackResponse} from './app/slackResponse';
 
 const config = loadConfig();
 const app = new App({
@@ -21,7 +21,7 @@ app.error((error: Error) => {
 const deps: SlackCommandsDeps = {
   slackApp: app,
   app: {
-    slackResponse: slackResponse,
+    slackResponse: createSlackResponse(),
   },
 };
 
