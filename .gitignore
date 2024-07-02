@@ -3,3 +3,5 @@ dev.json
 preprod.json
 prod.json
 local.json
+dist
+build
