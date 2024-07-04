@@ -5,6 +5,7 @@ import {createSlackResponse} from './app/slack-response';
 import Groq from 'groq-sdk';
 import {registerSlackEvents} from './slack/events';
 import {createConversationManager} from './app/conversation-manager';
+import {createFileHandler} from './utils/fileHandler';
 
 const config = loadConfig();
 const app = new App({
@@ -22,11 +23,18 @@ app.error((error: Error) => {
 
 const groq = new Groq({apiKey: config.groqConfig.apiKey});
 
+const fileHandler = createFileHandler();
+
 const deps = {
   slackApp: app,
   app: {
     slackResponse: createSlackResponse(),
-    conversationManager: createConversationManager({clients: {groq}}),
+    conversationManager: createConversationManager({
+      clients: {
+        groq,
+      },
+      utils: {fileHandler: fileHandler},
+    }),
   },
   clients: {
     groqAI: groq,

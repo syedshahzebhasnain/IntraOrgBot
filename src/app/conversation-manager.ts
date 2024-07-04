@@ -1,5 +1,5 @@
 import Groq from 'groq-sdk';
-import {readFileSync} from 'fs';
+import {FileHandler} from '../utils/fileHandler';
 
 export interface ConversationManger {
   handleUserInput(question: string): Promise<string>;
@@ -9,17 +9,21 @@ export interface ConversationMangerDeps {
   clients: {
     groq: Groq;
   };
+  utils: {
+    fileHandler: FileHandler;
+  };
 }
 
 export function createConversationManager(
   deps: ConversationMangerDeps
 ): ConversationManger {
   const {groq} = deps.clients;
+  const {fileHandler} = deps.utils;
   return {
     async handleUserInput(question: string): Promise<string> {
       let content =
         'You are a bot that supposed to help people find out the right people for the job. Provide their contact details. Encourage to reach out. This is the companys structure in json object';
-      const file = readFileSync('src/config/data.json', 'utf8');
+      const file = fileHandler.readFile('src/config/data.json');
       content = content + file;
       const chatCompletion = await groq.chat.completions.create({
         messages: [
