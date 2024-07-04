@@ -23,8 +23,8 @@ export function createConversationManager(
     async handleUserInput(question: string): Promise<string> {
       let content =
         'You are a bot that supposed to help people find out the right people for the job. Provide their contact details. Encourage to reach out. This is the companys structure in json object';
-      const file = fileHandler.readFile('src/config/data.json');
-      content = content + file;
+      const orgData = fileHandler.readFile('src/data/org-data.json');
+      content = content + orgData;
       const chatCompletion = await groq.chat.completions.create({
         messages: [
           {
