@@ -1,2 +1,5 @@
+# v1.0.0
+* Setup `/hello` command and app mention conversation
+* Add Groq Integration
 * Setup testing and other refactors
 * Initial project setup and folder structure
