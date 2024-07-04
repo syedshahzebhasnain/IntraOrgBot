@@ -27,7 +27,7 @@ To set up IntraOrgBot, follow these steps:
 
 6. Start the bot:
     ```
-    TBD
+    npm run start
     ```
 
 Once the bot is up and running, it will be able to respond to commands and assist users in finding the right person within your organization.

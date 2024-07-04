@@ -5,7 +5,7 @@ import {createSlackResponse} from './app/slack-response';
 import Groq from 'groq-sdk';
 import {registerSlackEvents} from './slack/events';
 import {createConversationManager} from './app/conversation-manager';
-import {createFileHandler} from './utils/fileHandler';
+import {createFileHandler} from './utils/file-handler';
 
 const config = loadConfig();
 const app = new App({

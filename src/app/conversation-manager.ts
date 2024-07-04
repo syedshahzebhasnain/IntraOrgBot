@@ -1,5 +1,5 @@
 import Groq from 'groq-sdk';
-import {FileHandler} from '../utils/fileHandler';
+import {FileHandler} from '../utils/file-handler';
 
 export interface ConversationManger {
   handleUserInput(question: string): Promise<string>;
@@ -51,7 +51,7 @@ function convertSlackIdToClickable(text: string): string {
   // Replace all occurrences of Slack IDs with clickable links
   const convertedText = text.replace(slackIdRegex, match => {
     const slackId = match;
-    return `<a href="https://your_slack_workspace.slack.com/team/${slackId}">${slackId}</a>`;
+    return `<@${slackId}>`;
   });
 
   return convertedText;
