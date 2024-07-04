@@ -4,5 +4,8 @@
       "token": "Test",
       "appToken": "Test"
     },
-    "defaultPort": 8081
+    "defaultPort": 8081,
+    "groqConfig": {
+      "apiKey": "Test"
+    }
   }

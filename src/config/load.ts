@@ -30,5 +30,8 @@ export default function loadConfig(env = 'local'): Config {
       appToken:
         process.env.SLACK_APP_TOKEN || selectConfig.slackConfig.appToken,
     },
+    groqConfig: {
+      apiKey: process.env.GROQ_API_KEY || selectConfig.groqConfig.apiKey,
+    },
   };
 }

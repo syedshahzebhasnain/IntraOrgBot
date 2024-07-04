@@ -1,5 +1,5 @@
 import {App} from '@slack/bolt';
-import {SlackResponse} from '../app/slackResponse';
+import {SlackResponse} from '../app/slack-response';
 
 export interface SlackCommandsDeps {
   slackApp: App;

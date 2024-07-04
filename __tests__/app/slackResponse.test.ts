@@ -1,4 +1,4 @@
-import {createSlackResponse} from '../../src/app/slackResponse';
+import {createSlackResponse} from '../../src/app/slack-response';
 
 describe('SlackResponse', () => {
   it('should return "Hello!" when helloResponse is called', async () => {

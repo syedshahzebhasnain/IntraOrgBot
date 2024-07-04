@@ -1,7 +1,10 @@
 import {App, LogLevel} from '@slack/bolt';
-import {SlackCommandsDeps, registerSlackCommands} from './slack/slackCommands';
+import {registerSlackCommands} from './slack/commands';
 import loadConfig from './config/load';
-import {createSlackResponse} from './app/slackResponse';
+import {createSlackResponse} from './app/slack-response';
+import Groq from 'groq-sdk';
+import {registerSlackEvents} from './slack/events';
+import {createConversationManager} from './app/conversation-manager';
 
 const config = loadConfig();
 const app = new App({
@@ -17,15 +20,20 @@ app.error((error: Error) => {
   return Promise.resolve();
 });
 
-// Dependencies object
-const deps: SlackCommandsDeps = {
+const groq = new Groq({apiKey: config.groqConfig.apiKey});
+
+const deps = {
   slackApp: app,
   app: {
     slackResponse: createSlackResponse(),
+    conversationManager: createConversationManager({clients: {groq}}),
+  },
+  clients: {
+    groqAI: groq,
   },
 };
-
-//Register bot commands
+//Register Slack Interactions
 registerSlackCommands(deps);
+registerSlackEvents(deps);
 
 export {app};

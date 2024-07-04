@@ -5,3 +5,5 @@ prod.json
 local.json
 dist
 build
+data.json
+src/config/default.json
