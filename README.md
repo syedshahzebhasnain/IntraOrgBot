@@ -75,5 +75,8 @@ To set up the Groq API, follow these steps:
 
 To quickly check if the bot is working , call the `/hello` command !
 To ask any question about the organization, just tag the bot and ask right away
-eg. `@Orgbot, who can help me with backend tasks if XYZ is Out of Office and their boss isnt responding`
+eg. 
+    ```
+   @Orgbot, who can help me with backend tasks if XYZ is Out of Office and their boss isnt responding`
+    ````
 
