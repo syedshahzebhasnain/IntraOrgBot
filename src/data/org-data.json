@@ -1,0 +1,234 @@
+{
+    "CEO": {
+      "name": "Jane Smith",
+      "slackId": "U123456",
+      "email": "jane.smith@example.com",
+      "jobDescription": "Responsible for overall company strategy and direction.",
+      "subordinates": {
+        "COO": {
+          "name": "John Doe",
+          "slackId": "U234567",
+          "email": "john.doe@example.com",
+          "jobDescription": "Oversees daily operations and ensures efficient business processes."
+        },
+        "CFO": {
+          "name": "Emily Johnson",
+          "slackId": "U345678",
+          "email": "emily.johnson@example.com",
+          "jobDescription": "Manages financial planning, reporting, and budgeting."
+        },
+        "CTO": {
+          "name": "Michael Brown",
+          "slackId": "U456789",
+          "email": "michael.brown@example.com",
+          "jobDescription": "Leads technology strategy and oversees product development.",
+          "subordinates": {
+            "Engineering Manager": {
+              "name": "Eugene",
+              "slackId": "U567890",
+              "email": "kevin.miller@example.com",
+              "jobDescription": "Leads software development and engineering efforts.",
+              "subordinates": {
+                "Team Lead": {
+                  "name": "Vitalli Popov",
+                  "slackId": "U678901",
+                  "email": "alex.johnson@example.com",
+                  "jobDescription": "Manages a team of Software Engineers.",
+                  "subordinates": {
+                    "Software Engineer": {
+                      "name": "Kevino Lion",
+                      "slackId": "U789012",
+                      "email": "kevino.lion@example.com",
+                      "jobDescription": "Develops and maintains backend products."
+                    },
+                    "Software Engineer": {
+                      "name": "Amanda Parket",
+                      "slackId": "U890123",
+                      "email": "amanda.parker@example.com",
+                      "jobDescription": "Develops and maintains backend products."
+                    },
+                    "Software Engineer": {
+                      "name": "Amanda Charkets",
+                      "slackId": "U890123",
+                      "email": "amanda.charkets@example.com",
+                      "jobDescription": "Develops and maintans frontend products."
+                    }
+                  }
+                }
+              }
+            },
+            "IT Manager": {
+              "name": "Andrew Thompson",
+              "slackId": "U901234",
+              "email": "andrew.thompson@example.com",
+              "jobDescription": "Manages IT infrastructure and support services.",
+              "subordinates": {
+                "IT Support Specialist": {
+                  "name": "IT Support 1",
+                  "slackId": "U912345",
+                  "email": "it.support1@example.com",
+                  "jobDescription": "Provides technical support to employees."
+                },
+                "IT Support Specialist": {
+                  "name": "IT Support 2",
+                  "slackId": "U923456",
+                  "email": "it.support2@example.com",
+                  "jobDescription": "Provides technical support to employees."
+                }
+              }
+            }
+          }
+        },
+        "CMO": {
+          "name": "Sarah Wilson",
+          "slackId": "U234567",
+          "email": "sarah.wilson@example.com",
+          "jobDescription": "Responsible for marketing strategy and brand management.",
+          "subordinates": {
+            "Marketing Manager": {
+              "name": "Jessica Taylor",
+              "slackId": "U345678",
+              "email": "jessica.taylor@example.com",
+              "jobDescription": "Oversees marketing campaigns and strategies.",
+              "subordinates": {
+                "Marketing Specialist": {
+                  "name": "Marketing Specialist 1",
+                  "slackId": "U456789",
+                  "email": "marketing.specialist1@example.com",
+                  "jobDescription": "Executes marketing initiatives across various channels."
+                },
+                "Marketing Specialist": {
+                  "name": "Marketing Specialist 2",
+                  "slackId": "U567890",
+                  "email": "marketing.specialist2@example.com",
+                  "jobDescription": "Executes marketing initiatives across various channels."
+                }
+              }
+            }
+          }
+        },
+        "Operations Manager": {
+          "name": "David Lee",
+          "slackId": "U678901",
+          "email": "david.lee@example.com",
+          "jobDescription": "Manages day-to-day operations and logistics."
+        },
+        "Finance Manager": {
+          "name": "Lisa Garcia",
+          "slackId": "U789012",
+          "email": "lisa.garcia@example.com",
+          "jobDescription": "Handles financial operations and accounting."
+        },
+        "HR Manager": {
+          "name": "Samantha Clark",
+          "slackId": "U890123",
+          "email": "samantha.clark@example.com",
+          "jobDescription": "Handles recruitment, employee relations, and HR policies.",
+          "subordinates": {
+            "HR Assistant": {
+              "name": "HR Assistant 1",
+              "slackId": "U901234",
+              "email": "hr.assistant1@example.com",
+              "jobDescription": "Supports HR functions such as payroll and benefits administration."
+            },
+            "HR Assistant": {
+              "name": "HR Assistant 2",
+              "slackId": "U912345",
+              "email": "hr.assistant2@example.com",
+              "jobDescription": "Supports HR functions such as payroll and benefits administration."
+            },
+            "HR Assistant": {
+              "name": "HR Assistant 3",
+              "slackId": "U923456",
+              "email": "hr.assistant3@example.com",
+              "jobDescription": "Supports HR functions such as payroll and benefits administration."
+            }
+          }
+        },
+        "Office Manager": {
+          "name": "Ryan Wilson",
+          "slackId": "U934567",
+          "email": "ryan.wilson@example.com",
+          "jobDescription": "Manages office facilities and administrative tasks.",
+          "subordinates": {
+            "Administrative Assistant": {
+              "name": "Admin Assistant 1",
+              "slackId": "U945678",
+              "email": "admin.assistant1@example.com",
+              "jobDescription": "Provides administrative support to different departments."
+            },
+            "Administrative Assistant": {
+              "name": "Admin Assistant 2",
+              "slackId": "U956789",
+              "email": "admin.assistant2@example.com",
+              "jobDescription": "Provides administrative support to different departments."
+            },
+            "Administrative Assistant": {
+              "name": "Admin Assistant 3",
+              "slackId": "U967890",
+              "email": "admin.assistant3@example.com",
+              "jobDescription": "Provides administrative support to different departments."
+            },
+            "Administrative Assistant": {
+              "name": "Admin Assistant 4",
+              "slackId": "U978901",
+              "email": "admin.assistant4@example.com",
+              "jobDescription": "Provides administrative support to different departments."
+            }
+          }
+        },
+        "Sales Manager": {
+          "name": "Daniel Anderson",
+          "slackId": "U989012",
+          "email": "daniel.anderson@example.com",
+          "jobDescription": "Leads sales strategy and business development efforts.",
+          "subordinates": {
+            "Sales Representative": {
+              "name": "Stephen Green",
+              "slackId": "U990123",
+              "email": "stephen.green@example.com",
+              "jobDescription": "Engages with clients and manages sales pipelines."
+            },
+            "Sales Representative": {
+              "name": "Lisa White",
+              "slackId": "U901234",
+              "email": "lisa.white@example.com",
+              "jobDescription": "Engages with clients and manages sales pipelines."
+            },
+            "Sales Representative": {
+              "name": "Michael Black",
+              "slackId": "U912345",
+              "email": "michael.black@example.com",
+              "jobDescription": "Engages with clients and manages sales pipelines."
+            }
+          }
+        },
+        "Customer Support Manager": {
+          "name": "Megan Roberts",
+          "slackId": "U990123",
+          "email": "megan.roberts@example.com",
+          "jobDescription": "Oversees customer service operations and satisfaction.",
+          "subordinates": {
+            "Customer Support Representative": {
+              "name": "Emma Brown",
+              "slackId": "U901234",
+              "email": "emma.brown@example.com",
+              "jobDescription": "Handles customer inquiries and support requests."
+            },
+            "Customer Support Representative": {
+              "name": "Matthew Clark",
+              "slackId": "U912345",
+              "email": "matthew.clark@example.com",
+              "jobDescription": "Handles customer inquiries and support requests."
+            },
+            "Customer Support Representative": {
+              "name": "Olivia Davis",
+              "slackId": "U923456",
+              "email": "olivia.davis@example.com",
+              "jobDescription": "Handles customer inquiries and support requests."
+            }
+          }
+        }
+      }
+    }
+  }

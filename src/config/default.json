@@ -1,0 +1,11 @@
+{
+    "slackConfig": {
+      "signingSecret": "Test",
+      "token": "Test",
+      "appToken": "Test"
+    },
+    "defaultPort": 8081,
+    "groqConfig": {
+      "apiKey": "Test"
+    }
+  }
